@@ -6,6 +6,18 @@
     <title>Hello World!!!!</title>
 </head>
 <body>
-    <h1>Belajar git SCM</h1>
+    <input type="number" id="tambah1"/>
+    <input type="number" id="tambah2"/>
+    <button onclick="hitungjarak()">hitung</button>
+    <br/>
+    <h3  id="hasiloutput"></h3>
+    <script>
+        function  hitungjarak(){
+            var waktu = document.getElementById('tambah1').value;
+            var kecepatan = document.getElementById('tambah2').value;
+            var jarak = parseInt(waktu) + parseInt(kecepatan);
+           document.getElementById('hasiloutput').innerHTML = jarak;
+        } 
+    </script>
 </body>
 </html>
